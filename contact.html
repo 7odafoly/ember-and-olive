@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Find us — EMBER &amp; OLIVE</title>
+    <meta name="description" content="Carrer del Rec, 42, El Born, Barcelona. How to reach Ember &amp; Olive on foot, metro, and after dinner." />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="page-inner">
+    <a class="skip" href="#main">Skip to contact</a>
+    <div class="grain" aria-hidden="true"></div>
+    <header class="site-header is-scrolled" data-header>
+      <a class="logo" href="index.html">
+        <svg class="logo-mark" viewBox="0 0 64 64" aria-hidden="true">
+          <path d="M32 8c2.6 8 4.4 14 4.4 20.2 0 7-2.6 12.2-4.4 15.6-1.8-3.4-4.4-8.6-4.4-15.6C27.6 22 29.4 16 32 8Z" fill="#C24A1D"/>
+          <path d="M32 40c8.6 1.8 15 7 17.2 13-6.8-1.3-12 .4-17.2 3.5-5.2-3.1-10.4-4.8-17.2-3.5C17 47 23.4 41.8 32 40Z" fill="#6B7A3D"/>
+        </svg>
+        <span>
+          <span class="logo-word">Ember &amp; Olive</span>
+          <small>El Born · Barcelona</small>
+        </span>
+      </a>
+      <button class="nav-toggle" type="button" data-nav-toggle aria-expanded="false" aria-controls="site-nav" aria-label="Open menu"><span></span></button>
+      <nav class="site-nav" id="site-nav" data-nav aria-label="Primary">
+        <a href="index.html">House</a>
+        <a href="menu.html">Kitchen</a>
+        <a href="story.html">Story</a>
+        <a href="private-dining.html">Rooms</a>
+        <a href="contact.html" aria-current="page">Find us</a>
+        <a class="nav-reserve" href="reservations.html">Reserve</a>
+      </nav>
+    </header>
+
+    <main id="main">
+      <header class="page-hero">
+        <div>
+          <p class="kicker">El Born</p>
+          <h1>Black timber door. No sign bigger than the street.</h1>
+        </div>
+        <p class="lede">Carrer del Rec, 42, 08003 Barcelona. If you reach the water, turn around. If you reach Santa Maria del Mar, you are two minutes away and should already be hungry.</p>
+      </header>
+
+      <section class="section">
+        <div class="wrap visit">
+          <div>
+            <p class="kicker">Desk</p>
+            <h2 class="display">Call, walk, or write.</h2>
+            <p class="lede"><a href="tel:+34931748820">+34 93 174 88 20</a><br /><a href="mailto:desk@emberolive.cat">desk@emberolive.cat</a></p>
+            <dl class="hours contact-hours">
+              <dt>Metro</dt>
+              <dd>Jaume I (L4), eight minutes on foot.</dd>
+              <dt>Bus</dt>
+              <dd>47 and V15 along Via Laietana.</dd>
+              <dt>Car</dt>
+              <dd>Don’t. The nearest park is Plaça Comercial, and it fills by seven.</dd>
+              <dt>Access</dt>
+              <dd>The Room is step-free from the street. The Cellar is not — twelve stairs, no lift. Tell us when you book.</dd>
+            </dl>
+          </div>
+          <div class="map-panel">
+            <p><strong>Carrer del Rec, 42</strong><br />Between the market and the harbour wall.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section section-tight">
+        <div class="wrap">
+          <p class="kicker">The house, unplated</p>
+          <div class="gallery" data-gallery>
+            <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&w=900&q=80" alt="Set dining table with glassware" />
+            <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=900&q=80" alt="Fresh bread on a wooden board" />
+            <img src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?auto=format&fit=crop&w=900&q=80" alt="Wine being poured at a table" />
+            <img src="https://images.unsplash.com/photo-1560717845-968823efbee1?auto=format&fit=crop&w=900&q=80" alt="Grilled seafood" />
+            <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&w=900&q=80" alt="Fine dining plate" />
+            <img src="https://images.unsplash.com/photo-1474979266404-7eaacbcd87c5?auto=format&fit=crop&w=900&q=80" alt="Olive oil and olives" />
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <div class="lightbox" data-lightbox data-modal hidden role="dialog" aria-modal="true" aria-label="Image gallery" tabindex="-1">
+      <div class="lightbox-card">
+        <button class="lightbox-close" type="button" data-modal-close aria-label="Close image">Close</button>
+        <img data-lightbox-image alt="" />
+        <p data-lightbox-caption></p>
+        <div class="lightbox-controls">
+          <button class="btn btn-ghost" type="button" data-lightbox-prev aria-label="Previous image">Previous</button>
+          <button class="btn btn-ghost" type="button" data-lightbox-next aria-label="Next image">Next</button>
+        </div>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-grid wrap">
+        <div>
+          <h2>EMBER &amp; OLIVE</h2>
+          <p>Wood-fired Mediterranean kitchen<br />Carrer del Rec, 42 · El Born<br />Barcelona 08003</p>
+        </div>
+        <div>
+          <h3>Book</h3>
+          <p><a href="reservations.html">Tables</a></p>
+          <p><a href="private-dining.html">Private rooms</a></p>
+          <p><a href="mailto:desk@emberolive.cat">desk@emberolive.cat</a></p>
+        </div>
+        <div>
+          <h3>Hours</h3>
+          <p>Tue–Sat from 18:00<br />Sunday lunch<br />Closed Monday</p>
+        </div>
+        <div>
+          <h3>Press</h3>
+          <p><a href="mailto:press@emberolive.cat">press@emberolive.cat</a></p>
+        </div>
+      </div>
+      <div class="legal wrap">
+        <p>© <span data-year></span> Ember &amp; Olive. A fictional house for a portfolio.</p>
+        <p>Photographs via Unsplash.</p>
+      </div>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
