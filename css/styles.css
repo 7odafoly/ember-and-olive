@@ -1099,14 +1099,43 @@ body.modal-open {
 }
 
 @media (max-width: 760px) {
+  .site-header.is-scrolled,
+  .page-inner .site-header {
+    backdrop-filter: none;
+  }
+
   .nav-toggle {
     display: grid;
     place-items: center;
+    position: relative;
+    z-index: 2;
+  }
+
+  .nav-open .nav-toggle {
+    color: var(--cream);
+  }
+
+  .nav-toggle[aria-expanded="true"] span {
+    background: transparent;
+  }
+
+  .nav-toggle[aria-expanded="true"] span::before {
+    top: 0;
+    transform: rotate(45deg);
+  }
+
+  .nav-toggle[aria-expanded="true"] span::after {
+    top: 0;
+    transform: rotate(-45deg);
   }
 
   .site-nav {
-    position: fixed;
-    inset: 0;
+    position: absolute;
+    inset: 0 auto auto 0;
+    width: 100vw;
+    height: 100vh;
+    height: 100dvh;
+    z-index: 1;
     background: var(--ink);
     color: var(--cream);
     flex-direction: column;
